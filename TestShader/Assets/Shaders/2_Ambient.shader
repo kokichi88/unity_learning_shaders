@@ -1,4 +1,4 @@
-﻿Shader "kokichi/2_Lambert" {
+﻿Shader "kokichi/2_Ambient" {
 	Properties {
 		_Color("Color", Color) = (1,1,1,1)
 	
@@ -33,10 +33,10 @@
 				float3 normalDir =normalize( mul(float4(v.normal,0.0), _World2Object).xyz );
 				float atten = 1;
 				float3 lightDir = normalize ( _WorldSpaceLightPos0.xyz);
-				float3 diffuseReflection = atten * _LightColor0 * _Color.rgb *  max(0, dot(normalDir, lightDir));
-//				float3 diffuseReflection = max(0, dot(normalDir, lightDir));
-				
-				o.col = float4(diffuseReflection,0);
+//				float3 diffuseReflection = dot(normalDir, lightDir);
+				float3 diffuseReflection = atten * _LightColor0.xyz *  max(0, dot(normalDir, lightDir));
+				float3 lightFinal = diffuseReflection * UNITY_LIGHTMODEL_AMBIENT.xyz;
+				o.col = float4(lightFinal * _Color.rgb,1.0);
 				o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
 				return o;
 			}

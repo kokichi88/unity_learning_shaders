@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: 1_FlatColor
-  m_Shader: {fileID: 4800000, guid: 5b4f6b3a7705c478c862cc2a7d5f0ae8, type: 3}
+  m_Name: 2_Ambient
+  m_Shader: {fileID: 4800000, guid: fb72a8b35eb834150803ba4b22ba4ed2, type: 3}
   m_ShaderKeywords: []
   m_CustomRenderQueue: -1
   m_SavedProperties:
