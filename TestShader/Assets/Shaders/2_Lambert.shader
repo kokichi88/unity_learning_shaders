@@ -33,7 +33,7 @@
 				float3 normalDir =normalize( mul(float4(v.normal,0.0), _World2Object).xyz );
 				float atten = 1;
 				float3 lightDir = normalize ( _WorldSpaceLightPos0.xyz);
-				float3 diffuseReflection = atten * _LightColor0 * _Color.rgb *  max(0, dot(normalDir, lightDir));
+				float3 diffuseReflection = atten * _LightColor0.xyz * _Color.rgb * max(0, dot(normalDir, lightDir));
 //				float3 diffuseReflection = max(0, dot(normalDir, lightDir));
 				
 				o.col = float4(diffuseReflection,0);
