@@ -1,4 +1,4 @@
-﻿Shader "kokichi/2_Lambert" {
+﻿Shader "kokichi/3_Lambert" {
 	Properties {
 		_Color("Color", Color) = (1,1,1,1)
 	

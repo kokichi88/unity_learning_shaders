@@ -1,4 +1,4 @@
-﻿Shader "kokichi/1-FlatColor" {
+﻿Shader "kokichi/1_FlatColor" {
 	Properties {
 		_Color("Color", Color) = (1.0,1.0,1.0,1.0)
 	}
