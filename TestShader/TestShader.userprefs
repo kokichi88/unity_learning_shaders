@@ -1,6 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Shaders/4_UnlitTexture.shader">
+    <Files>
+      <File FileName="Assets/Shaders/2_Ambient.shader" Line="1" Column="1" />
+      <File FileName="Assets/Shaders/3_Lambert.shader" Line="32" Column="5" />
+      <File FileName="Assets/Shaders/4_UnlitTexture.shader" Line="34" Column="48" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
